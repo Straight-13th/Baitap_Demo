@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        #khung{
+            width: 710px;
+            border: 2px solid rgb(167, 173, 177);
+            margin-top: 20px;
+            padding: 5px;
+            background-color: rgba(153, 205, 253);
+        }
+        #center{
+            text-align: center;
+        }
+        #cachle{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        #custom-hr{
+            width: 600px;           /* Độ rộng: có thể dùng % hoặc px (ví dụ: 300px) */
+            height: 3px;          /* Độ dày của đường kẻ */
+            background-color: #6b6a6a; /* Màu sắc của đường kẻ */
+            border: none;         /* Bắt buộc: Xóa đường viền mặc định của trình duyệt */
+            margin: 0 auto;    /* Căn giữa đường hr và tạo khoảng cách trên/dưới */
+        }
+        #short-input{
+            width: 70px; /* Chỉnh độ rộng cố định theo pixel */
+        }
+        #name-input{
+            width: 90px; /* Chỉnh độ rộng cố định theo pixel */
+        }
+        #cachletrai{
+            margin-left: 185px
+        }
+        #center-img {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="khung">
+        <img src="/images_folder/Tuan01/jacksonelectronics.jpg" alt="logo" id="center-img">
+        <div id="center"><h1>Registration Form</h1>
+        <br><br>
+        <p>Register your Jackson Electronics product here</p><br>
+        </div>
+        <div id="cachle">
+            <form action="">
+                <label for="firstname">First Name:</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;
+                <input type="text" id="name-input">
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="name-input">
+                <br><br>
+                <label for="address1">Address #1:</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;
+                <input type="text" id="address1">
+                <br><br>
+                <label for="address2">Address #2:</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;
+                <input type="text" id="address2"><br><br>
+                <label for="city">City:</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="">
+                <label for="state">State:</label>
+                <input type="text" id="short-input">
+                <label for="zip">Zip:</label>
+                <input type="text" id="short-input">
+                <br><br>
+                <label for="Country">Country:</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="country"><br><br>
+                <hr id="custom-hr"><br>
+                <label for="product">Product:</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;
+                <select name="product" id="product">
+                    <option value="none">Select your product</option>
+                    <option value="1">ScanMaster</option>
+                    <option value="2">FLDSMDFR</option>
+                    <option value="computer">Computer</option>
+                    <option value="camera">Stethoscopes</option>
+                </select> 
+                <br><br>
+                <label for="datepurchased">Date Purchased:</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="date" id="datepurchased">
+                <br><br>
+                <label for="serialnumber">Serial #:</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="serialnumber"><br><br>
+                <label for="usedfor">Used for:</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="use" value="home">Home
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="use" value="educationinstituition">Education Institution<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="use" value="business">Business
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="use" value="other">Other<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="use" value="government">Government
+                <br><br>
+                <label for="system">System(check all that apply):</label>
+                <input type="checkbox" name="st" value="windows">Windows&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="st" value="unix">UNIX
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="st" value="macintosh">Macintosh 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" name="st" value="other">Other   
+                <br><br>
+                <hr id="custom-hr"><br>     
+                <label for="feedback" style="vertical-align: top;">Comments?:</label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Text here..."></textarea>
+                <input type="submit" value="Click to register" id="cachletrai">&nbsp;&nbsp;<input type="submit" value="Click to cancel">
+            </form>
+        </div>
+    </div>
+    <br><br>
+</body>
+</html>

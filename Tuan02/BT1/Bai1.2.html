@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai1.2</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin: 0 auto;
+        }
+        #container{
+            width: 900px;
+            height: 550px;
+            border: 1px solid blue;
+        }
+        #h1{
+            text-shadow: 3px 25px 15px red;
+        }
+        #header1{
+            width: 100%;
+            height: 110px;
+            border-bottom: 1px solid blue;
+            text-align: center;
+            line-height: 110px;
+            text-transform: uppercase;
+            font-size: 15px;
+            color: rgb(136, 11, 9);
+            letter-spacing: 3px;
+            font-style: italic
+        }
+        #menu1{
+            width: 899px;
+            height: 30px;
+            border-bottom: 1px solid blue;
+            padding-left: 40px;
+            font-size: 18px;
+            background-color: pink;
+        }
+        #home{
+            width: 160px;
+            height: 100%;
+            border-right: 1px solid rgb(93, 0, 255);
+            float: left;
+            padding-left: 130px;
+            padding-top: 2px;
+        }
+        #mini-menu{
+            width: 120px;
+            height: 100%;
+            border-right: 1px solid rgb(93, 0, 255);
+            /*margin-left: 162px;*/
+            text-align: center;
+            padding-top: 5px;
+            float: left;
+            color: white;
+            font-size: 13px;
+            font-family: Times;
+        }
+        #search{
+            float: left;
+            padding-left: 30px;
+            padding-top: 3px
+        }
+        #content{
+            width: 100%;
+            height: 547px;
+            font-size: 19px;
+        }
+        #header2{
+            width: 100%;
+            height: auto;
+            background-color: rgb(204, 239, 190);
+            color: rgb(73, 3, 3);
+            border-bottom: 1px solid rgb(204, 239, 190);
+        }
+        #header3{
+            width: 100%;
+            height: auto;
+            background-color: rgb(204, 239, 190);
+            color: rgb(73, 3, 3);
+            border-bottom: 1px solid rgb(204, 239, 190);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header1">
+            <h1 id="h1">EXAMPLE CAFE MENU</h1>
+        </div>
+        <div id="menu1">
+            <div id="home">
+                <img src="/images_folder/Tuan02/icons8-home-50.png" height="25px" alt="home" usemap="#homelogo">
+                <map id="homelogo" name="home">
+                    <area shape="default" coords="0,0,x,y" href="Bai1.1.html" alt="Home Page" title="Return to the Home page">
+                </map>
+            </div>
+            <div id="mini-menu"><b>STARTER</b></div>
+            <div id="mini-menu"><b>MAIN COURSES</b></div>
+            <div id="mini-menu"><b>DESSERTS</b></div>
+            <div id="search">
+                <input type="search">&nbsp;<input type="submit" value="Go">         
+            </div>
+        </div>
+        <div id="content">
+            <div id="header2">
+                <h1 id="starter">Starters</h1>
+            </div>
+            <ul>
+                <li>Chesnut and Mushrooms Goujons<ins style="color: red">(v)</ins></li>
+                <li>Goat Cheese<ins style="color: red">(v)</ins></li>
+                <li><b style="color: rgb(228, 151, 8)">HONEY SOY CHICKEN KEBABS</b><ins style="color: red">(V)</ins></li>
+                <li>Seafood Salads<ins style="color: red">(v)</ins></li>
+            </ul>
+            <a href="#h1" style="color: red;"><b>Back to top</b></a>
+            <br>
+            <div id="header3">
+                <h1 id="desserts">Desserts</h1>
+            </div>
+                <ul>
+                    <li>Lemon Sorber<ins style="color: red">(v)</ins></li>
+                    <li>Chocolate Mud Pie<ins style="color: red">(v)</ins></li>
+                    <li>Pecan Pie<ins style="color: red">(v)</ins></li>
+                    <li>Selection of fine Cheeses from Around the World<ins style="color: red">(v)</ins></li>
+                </ul>
+            <a href="#h1" style="color: red;"><b>Back to top</b></a>
+        </div>
+
+    </div>
+</body>
+</html>

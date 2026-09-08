@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        #container{
+            width: 960px;
+            height: 900px;
+            border: 2px solid gray;
+        }
+        #header1{
+            position: relative;
+            width: 100%;
+            height: 150px;
+            background-color: #294e79;
+            color: white;
+        }
+        #header1 img{
+            width: 100px;
+        }
+        #header1 h1{
+            position: absolute;
+            left: 120px;
+            top: 40px;
+        }
+        #header1 p{
+            position: absolute;
+            left: 120px;
+            top: 80px;
+        }
+        #header1 ul{
+            position: absolute;
+            right: 10px;
+            bottom: 0px;
+        }
+        #header1 ul li{
+            display: inline-block;
+            padding: 15px;
+            background-color: blue;
+        }
+        #header1 ul li a{ 
+            color: white;
+            text-decoration: none;
+        }
+        #header1 #ser{
+            position: absolute;
+            right: 100px;
+            top: 10px;
+            height: 35px;
+            background-color: #294e79;
+            border: 1px solid white;
+        }
+        ::-webkit-input-placeholder{
+            color: white;
+        } 
+        #header1 #go{
+            position: absolute;
+            right: 40px;
+            top: 10px;
+            height: 35px;
+            background-color: #294e79;
+            color: white;
+            border: 1px solid white;
+        }
+        #content{
+            width: 70%;
+            height: 650px;
+            background-color: aqua;
+            float: left;
+        }
+        #content #left{
+            width: 60%;
+            height: 100%;
+            background-color: white;
+            float: left;
+            padding-left: 15px;
+        }
+        #content #left p{
+            color: red;
+            text-shadow: 3px 3px 3px rgb(120, 160, 40);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #content #right{
+            width: 40%;
+            height: 100%;
+            background-color: white;
+            float: left;
+        }
+        #content #left input{
+            width: 170px;
+        }
+        #content h2{
+            font-size: 25px;
+            padding: 15px;
+            color: rgba(0, 0, 0, 0.61);
+            border-bottom: 3px dashed rgba(0, 0, 0, 0.61);
+            background-color: white;
+        }
+        #aside1{
+            width: 30%;
+            height: 650px;
+            float: left;
+            background-image: linear-gradient(yellow, blue);
+        }
+        #footer{
+            clear: both;
+            width: 100%;
+            height: 100px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="header1">
+        <img src="/images_folder/Tuan03/Bai2/flower.png" alt="flower">
+        <h1>FlowerBox 360</h1>
+        <p>...to get your daily close of luxury roses!</p>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Promotion</a></li>
+            <li><a href="">Gift Baskets</a></li>
+            <li><a href="">Flower Services</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+        <input type="search" name="search" id="ser" placeholder="Search the site...">
+        <input type="submit" value="GO" id="go">
+    </div>
+    <div id="content">
+        <h2>Why Not Contact Us Today!</h2>
+        <div id="left">
+            <br>
+            <p><i>For FlowerBox 360 shopers, that means not only can you send your friends and loves ones the highest
+            quality flowers found on online, but thatt you can do so at a great value.
+            FlowerBox 360 Info!</i></p><br>
+            <label for="name" value="name">Name:</label>
+            <label for="email" value="email" style="padding-left: 130px;">Email:</label><br>
+            <input type="text">&nbsp;&nbsp;<input type="text"><br>
+            <br>
+            <label for="telephone" value="telephone">Telephone:</label>
+            <label for="subject" value="email" style="padding-left: 103px;">Subject:</label><br>
+            <input type="text">&nbsp;&nbsp;<input type="text"><br>     
+            <br>    
+            <form>
+                <label for="comment">Message::</label><br>
+                <textarea id="comment" name="comment" rows="4" cols="45" placeholder=""></textarea><br>
+                <button type="submit">Submit</button>&nbsp;
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+        <div id="right">
+            <h2>FlowerBox 360 Info!</h2>
+            <br>
+            <p style="padding-left: 15px;">Operating Hours:</p><br>
+            <p style="padding-left: 15px;">Monday-Friday:9:000am-5:00pm<br>
+            Saturday:9:00am-1.00pm.<br>
+            Sunday:CLosed (No Deliveries)<br>
+            ORDER ONLINE 24/7<br><br><br>
+            Software Engineering Dept.<br>
+            Information Technology Faculty<br>
+            First Floor, H Building<br><br>
+            12 Nguyen Van Bao St., Ward 4,<br>
+            Go Vap District, Ho Chi Minh City<br>
+            Tel: 0283.8940 390<br>
+            Fax: 0283.9940 954
+            </p><br>
+        </div>        
+    </div>
+    <div id="aside1"></div>
+    <div id="footer"></div>
+</div>
+
+
+</body>
+</html>

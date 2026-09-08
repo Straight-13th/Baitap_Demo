@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        #khungngoai{
+            width: 710px;
+            border: 2px solid rgb(27, 104, 192);
+            margin-top: 20px;
+            padding: 5px;
+        }
+        #custom-fieldset{
+            border: 1px solid black;
+        }
+        #custom-legend{
+            text-align: left;
+            padding: 0 10px; /* Tạo khoảng đệm trái phải cho đẹp */
+            margin-left: 0;  /* Kéo sát về góc trái nhất */
+        }
+    </style>
+</head>
+<body>
+    <div id="khungngoai">
+        <h1>Contact Us</h1>
+        <fieldset id="custom-fieldset">
+            <legend id="custom-legend">Your message:</legend>
+            <label for="to">To</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;
+            <input type="email" id="theiremail"><br><br>
+            <label for="youremail" id="youremail">Your email</label>
+            <input type="email" id="theiremail"><br><br>
+            <label for="feedback" style="vertical-align: middle;">Message</label>
+            &nbsp;&nbsp;&nbsp;
+            <textarea id="feedback" name="feedback" rows="10" cols="50" placeholder="Text here..." style="vertical-align: middle;"></textarea><br><br>
+            <label for="file" id="file">Attach File</label>
+            <input type="file" id="files" name="files" multipleaccept="image/png, image/jpeg, image/jpg"><br>
+        </fieldset>
+        <fieldset id="custom-fieldset">
+            <legend id="custom-legend">How you found us:</legend>
+            <label for="how" id="how">How did you hear of us</label>
+            <select name="how" id="how">
+                <option value="0">Choose</option>
+                <option value="1">Google</option>
+                <option value="2">Youtube</option>
+                <option value="3">Tiktok</option>
+                <option value="4">Instagram</option>
+                <option value="5">Facebook</option>
+            </select><br><br>
+            <label for="newsletter" id="newsletter">Newsletter</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" value="letter">Ensure this box is checked if you would like to receive email updates
+        </fieldset>
+        <input type="submit" value="Send message" id="send">
+    </div>
+</body>
+</html>

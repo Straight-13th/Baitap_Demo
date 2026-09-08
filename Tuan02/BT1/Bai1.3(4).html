@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Bai1 class="3"></Bai1></title>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin: 0 auto;
+        }
+        #container{
+            width: 900px;
+            height: 790px;
+            border: 1px solid blue;
+        }
+        #h1{
+            text-shadow: 3px 25px 15px red;
+        }
+        #header1{
+            width: 100%;
+            height: 200px;
+            border-bottom: 1px solid blue;
+            text-align: center;
+            line-height: 200px;
+            text-transform: uppercase;
+            font-size: 25px;
+            color: rgb(136, 11, 9);
+            letter-spacing: 3px;
+            font-style: italic
+        }
+        #menu1{
+            width: 899px;
+            height: 30px;
+            border-bottom: 1px solid blue;
+            padding-left: 40px;
+            font-size: 18px;
+            background-color: pink;
+        }
+        #home{
+            width: 180px;
+            height: 100%;
+            border-right: 1px solid rgb(93, 0, 255);
+            float: left;
+            padding-left: 153px;
+            padding-top: 2px;
+        }
+        #mini-menu{
+            width: 120px;
+            height: 100%;
+            border-right: 1px solid rgb(93, 0, 255);
+            /*margin-left: 162px;*/
+            text-align: center;
+            padding-top: 5px;
+            float: left;
+            color: white;
+            font-size: 13px;
+            font-family: Times;
+        }
+        #search{
+            float: left;
+            padding-left: 30px;
+            padding-top: 3px
+        }
+        #content{
+            width: 100%;
+            height: 547px;
+            font-size: 19px;
+        }
+        #header2{
+            padding-left:20px;
+            padding-top: 2px;
+            width: 300px;
+            height: auto;
+            background-color: pink;
+            color: rgba(137, 5, 5, 0.732);
+        }
+        #content1{
+            float: left;
+            width: 169px;
+            padding-left: 1px;
+            padding-top: 4px;
+        }
+        #khung_ct1{
+            width: 168px;
+            height: 25px;
+            border-radius: 15px;
+            padding-left: 4px;
+            border: 2px solid white;
+            background-color: pink;
+            color: white;
+        }
+        #content2{
+            padding-top: 2px;
+            width: 499px;
+            float: left;
+            height: 510px;
+        }
+        #content3{
+            border-top: 2px solid white;
+            padding-top: 2px;
+            background-color: black;
+            height: auto;
+            width: 230px;
+            color: white;
+            float: left;
+            list-style-type: none;
+        }
+        #mini_words{
+            font-size: 10px;
+        }
+        #footer{
+            clear: both;
+            width: 100%;
+            height: 49px;
+            line-height: 40px;
+            border-top: 1px solid red;
+            background-color: pink;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            margin-top: 30px;
+        }
+        #set_img{
+            border-radius: 50%;
+            filter: drop-shadow(5px 5px 10px rgb(193, 82, 82))
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header1">
+            <h1 id="h1">EXAMPLE CAFE MENU</h1>
+        </div>
+        <div id="menu1">
+            <div id="home">
+                <img src="/images_folder/Tuan02/icons8-home-50.png" height="25px" alt="home" usemap="#homelogo">
+                <map id="homelogo" name="home">
+                    <area shape="default" coords="0,0,x,y" href="Bai1.1.html" alt="Home Page" title="Return to the Home page">
+                </map>
+            </div>
+            <div id="mini-menu"><b>STARTER</b></div>
+            <div id="mini-menu"><b>MAIN COURSES</b></div>
+            <div id="mini-menu"><b>DESSERTS</b></div>
+            <div id="search">
+                <input type="search">&nbsp;<input type="submit" value="Go">         
+            </div><hr>
+        </div>
+        <div id="content1">
+            <b><p id="khung_ct1">Cafe Latte</p>
+            <p id="khung_ct1">Cappuccino</p>
+            <p id="khung_ct1">Ocean Blue</p>
+            <p id="khung_ct1">Ice-cream Cafe</p>
+            <p id="khung_ct1">Order Online</p>
+            </b><br>
+            <img src="/images_folder/Tuan02/company.png" width="168px" alt="company" id="set_img">
+        </div>
+        <div id="content2">
+            <div id="header2">
+                <h2 id="starter">S   t   a   r   t   e   r   s</h2>
+            </div>
+            <ul>
+                <li>Chesnut and Mushrooms Goujons<ins style="color: red">(v)</ins></li>
+                <li>Goat Cheese<ins style="color: red">(v)</ins></li>
+                <li><b style="color: rgb(228, 151, 8)">HONEY SOY CHICKEN KEBABS</b><ins style="color: red">(V)</ins></li>
+                <li>Seafood Salads<ins style="color: red">(v)</ins></li>
+            </ul>
+            <a href="#h1" style="color: red;"><b>Back to top</b></a>
+            <br>
+            <div id="header2">
+                <h2 id="desserts">D   e   s   s   e   r   t   s</h2>
+            </div>
+                <ul>
+                    <li>Lemon Sorber<ins style="color: red">(v)</ins></li>
+                    <li>Chocolate Mud Pie<ins style="color: red">(v)</ins></li>
+                    <li>Pecan Pie<ins style="color: red">(v)</ins></li>
+                    <li>Selection of fine Cheeses from Around the World<ins style="color: red">(v)</ins></li>
+                </ul>
+            <a href="#h1" style="color: red;"><b>Back to top</b></a>
+            <br>
+            <div id="header2">
+                <h3 id="information">I N F O R M A T I O N</h3>
+            </div><br>
+            <input type="text" style="width: 230px" placeholder="First Name">&nbsp;&nbsp;<input type="text" style="width: 200px" placeholder="Last Name"><br><br>
+            <input type="text" style="width: 230px" placeholder="Email">&nbsp;&nbsp;<input type="text" style="width: 200px" placeholder="Telephone"><br><br>
+            <select style="width: 230px">
+                <option value="0">USA</option>
+                <option value="1">Vietnam</option>
+                <option value="0">Italy</option>
+            </select>&nbsp;&nbsp;
+            <input type="radio" name="Vietnamese" value="Vietnamese">Vietnamese
+            <input type="radio" name="Foreigner" value="Foreigner">Foreigner<br><br>
+            <textarea id="feedback" name="feedback" rows="3" cols="55" placeholder="Comment" style="vertical-align: middle;"></textarea><br><br>
+            <input type="submit" value="Submit">&nbsp;<input type="submit" value="Cancel">
+        </div>
+        <div id="content3">
+            <h2>Events</h2>
+            <ol style="list-style-type: none;">
+                <li>Regular Meetings<br>
+                    <img src="/images_folder/Tuan02/meeting.png" height="100px" alt="meeting"><br>
+                    <p id="mini_words">Host your regular team meetings or activities<br> 
+                        in the comfort of your own private room.<a href="Bai1.3(2).html">Read more...</a><br>
+                    </p>
+                </li>
+                <li>Product Launches<br>
+                    <img src="/images_folder/Tuan02/launch.png" height="100px" alt="launch"><br>
+                    <p id="mini_words">Launch your product with ease in a space that<br> 
+                        truly fits its image. Create an unforgettable experience for your 
+                        guests with our spacious outlets! Whether you want to host an intimate 
+                        celebration or launch an event for hundreds of guests, Kith's space is 
+                        customisable to your<br> needs
+                    </p>
+                </li>
+            </ol>
+        </div>
+        <div id="footer">
+            <i><b>ABC Company<sup>©</sup> - 12345678 - abccoffee@gmail.com</b></i>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!--<p>Đây là đoạn văn bản hiển thị mặc định. 
+<span id="dots">...</span>
+<span id="more" style="display: none;">Đoạn văn bản ẩn tiếp theo sẽ hiện ra khi bạn bấm nút đọc thêm.</span></p>
+
+<button onclick="toggleReadMore()" id="myBtn">Đọc thêm</button>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            margin: 0 auto;
+        }
+        #container{
+            border: 1px solid black;
+            width: 900px;
+            height: 700px;
+            padding-top: 10px;
+        }
+        #header{
+            border: 1px solid gray;
+            width: 880px;
+            height: 130px;
+            background-image: url(/images_folder/Tuan02/background.png);
+            padding-left: 0px;
+            color: white;
+        }
+        #menu{
+            width: 880px;
+            height: 20px;
+            background-color: gray;
+            color: white;
+            padding-left: 10px;
+        }
+        #nd1{
+            width: 627px;
+            height: 500px;
+            border: 1px solid gray;
+            float: left;
+            padding-left: 10px;
+            margin-left: 10px;
+        }
+        #nd1_1{
+            width: 620px;
+            height: 250px;
+        }
+        #nd1_2{
+            width: 620px;
+            height: 250px;
+        }
+        #nd2{
+            width: 251px;
+            height: 510px;
+            float: left;
+        }
+        #nd2_1{
+            width: 257px;
+            height: 356px;
+        }
+        #nd2_2{
+            width: 257px;
+            height: auto;
+            padding-left: 17px;
+        }
+        #set_img{
+            float: left;
+        }
+        ul li{
+            list-style: none;
+            font-size: 17px;
+            color: red;
+        }
+        #footer{
+            clear: both;
+            background-color: gray;
+            width: 880px;
+            height: 20px;
+            color: white;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <img id="set_img" src="/images_folder/Tuan02/logo.png" width="90px" alt="logo" style="margin-top: 15px;">
+            <h1 style="font-family: Arial, Helvetica, sans-serif;margin-top: 40px;padding-left: 100px;">YOKO'S KITCHEN</h1>
+            <h3 style="font-family: Arial, Helvetica, sans-serif;padding-left: 100px;;">JAPANESE COOKING CLASSES</h3>
+        </div>
+        <div id="menu">
+            <a href="Bai2.html" style="color: white;">home</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Bai2.html" style="color: white;">classes</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Bai2.html" style="color: white;">catering</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Bai2.html" style="color: white;">about</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#contact" style="color: white;">contact</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div id="nd1">
+            <div id="nd1_1">
+                <figure width="300px", style="float:left">
+                    <img src="/images_folder/Tuan02/bokchoi.jpg" width="300px" 
+                    style="margin-top: 10px;">
+                    <figcaption>Bok Choi</figcaption>
+                </figure>
+                <br>
+                <p style="font-size: 25px; padding-left: 330px; margin-top: 20px;">Japanese Vegetarian</p>
+                <p style="padding-left: 330px; color: red">Five week course in London</p><br>
+                <p style="padding-left: 330px;">A five week introduction to traditional Japanese vegetarian meals, teaching you a selection of rice and noodle dishes.</p>
+            </div>
+            <div id="nd1_2" style="clear: both">
+                <figure width="300px", style="float: left">
+                    <img src="/images_folder/Tuan02/teriyaki.jpg" width="300px"
+                    style="margin-top: 10px">
+                    <figcaption>Teriyaki Sauce</figcaption>
+                </figure>
+                <br>
+                <p style="font-size: 25px; padding-left: 330px; margin-top: 20px;">Sauces Masterclass</p>
+                <p style="padding-left: 330px; color: red">One day workshop</p><br>
+                <p style="padding-left: 330px;">An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.</p>
+            </div>
+        </div>
+        <div id="nd2">
+            <div id="nd2_1">
+                <br><br>
+                <h2 style="color: red; margin-left: 17px;">Popular Recipies</h2><br>
+                <ul> 
+                    <hr><br>
+                    <li>Yakitori (grilled chicken)</li><br><hr><br>
+                    <li>Tsukune (minced chicken patties)</li><br><hr><br>
+                    <li>Okonomiyaki (savory pancakes)</li><br><hr><br>
+                    <li>Mizutaki (chicken stew)</li><br><hr><br>
+                </ul>
+            </div>
+            <div id="nd2_2">
+                <br>
+                <h2 style="color: red;" id="contact">Contact</h2><br>
+                <p>Yoko's Kitchen</p>
+                <p>27 Redchurch Street</p>
+                <p>Shoreditch</p>
+                <p>London E2 7DP</p>
+            </div>
+        </div>
+        <div id="footer">
+            <p><b>© 2011 Yoko's Kitchen</b></p>
+        </div>
+    </div>
+</body>
+</html>
